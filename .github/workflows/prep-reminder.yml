@@ -1,0 +1,16 @@
+name: Session Prep Reminder
+
+on:
+  workflow_dispatch:
+
+jobs:
+  prep-checklist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Session prep checklist
+        run: |
+          echo "=== Session Prep Checklist ==="
+          echo "1. Rewatch the session video"
+          echo "2. Prepare notes"
+          echo "3. Write down discussion questions"
+          echo "============================"
